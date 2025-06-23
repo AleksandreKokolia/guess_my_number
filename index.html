@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Guess My Number</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header_section">
+        <button class="again button">Again!</button>
+        <span class="range color_white">(Between 1 and 20)</span>
+      </div>
+      <h1 class="title">Guess My Number!</h1>
+    </header>
+
+    <main>
+      <div class="line">
+        <div class="sicret_number">?</div>
+      </div>
+      <div class="grid">
+        <div class="guess_number_section">
+          <input type="number" class="guess" />
+          <button class="check button">Check!</button>
+        </div>
+        <div class="score_section">
+          <p class="message">Start guessing...</p>
+          <p class="score">💯 Score: <span class="score_number">20</span></p>
+          <p class="highscore">
+            🥇 Highscore: <span class="high_scoreNumber">0</span>
+          </p>
+        </div>
+      </div>
+      <div class="overlay hidden">
+        <div class="pop_up">
+          <h2 class="pop_up_header">you win</h2>
+          <p class="pop_up_text">
+            Congratulations on your incredible achievement! Reaching this
+            milestone is a testament to your hard work, dedication, and
+            perseverance. You truly deserve this success, and I have no doubt
+            that even greater accomplishments await you. Wishing you continued
+            growth, happiness, and prosperity in all that you do. Well done!
+            🎉👏 now if you want to play again click the button
+          </p>
+          <div class="flex">
+            <button class="again button pop_up_butoon">Again!</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
